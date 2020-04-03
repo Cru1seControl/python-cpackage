@@ -9,7 +9,7 @@ setup(
     version="v1.0.3",
     license="MIT",
     description="A python utility for creating better modules/packages.",
-    long_description=long
+    long_description=long,
     author="Cru1seControl",
     author_email="Cru1seControl.loot@gmail.com",
     url="https://github.com/Cru1seControl",
