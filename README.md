@@ -1,4 +1,4 @@
-# cpackage
+# cpackage 
 A python utility for creating better modules/packages. This module give the ability to quickly create and add files to different directories. From creating directory & sub directory to managing the files that are put into those folders. This is more of an automation tool for writing modules but can be used for other package related matters.
 
 ## Prerequisites
@@ -11,10 +11,18 @@ A python utility for creating better modules/packages. This module give the abil
 * Module shutil [preinstalled](https://docs.python.org/3/library/shutil.html)
 
 # Installing
-Execute *./install.sh* inside the python-cpackage folder.
 
-If your having trouble running the *./install.sh* script run *sed -i -e 's/\r$//' install.sh*
+**Installing from Github**
 
+git clone "https://github.com/Cru1seControl/python-cpackage.git"
+
+Execute [*./install.sh*](https://github.com/Cru1seControl/python-cpackage/blob/master/install.sh) inside the python-cpackage folder.
+
+If your having trouble running the *./install.sh* script run *sed -i -e 's/\r$//' install.sh* then execute the script.
+
+**Installing from PyPI**
+
+pip3 install cpackage
 
 # cpackage Module Usage
 
