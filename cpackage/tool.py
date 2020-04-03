@@ -26,6 +26,7 @@ class _toolConstruct(object):
         elif args.site:
             return False
 
+    # has potential future use 
     def subTup():
         argsubLst = []
         if args.sub:
