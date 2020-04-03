@@ -3,7 +3,7 @@ from distutils.core import setup
 setup(
     name="cpackage",
     packages=["cpackage"],
-    version="v1.0.0",
+    version="v1.0.3",
     license="MIT",
     description="""A python utility for creating better modules/packages.
     This module give the ability to quickly create and add files to different directories.
