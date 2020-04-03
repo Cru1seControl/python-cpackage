@@ -10,7 +10,7 @@ A python utility for creating better modules/packages. This module give the abil
 
 * Module shutil [preinstalled](https://docs.python.org/3/library/shutil.html)
 
-# cpackage module usage
+# cpackage Module Usage
 
 ```python
 from cpackage import CPack, CAccess, Cdir
@@ -36,13 +36,11 @@ our package so far...
 
 or you can create a simple package in one line using cpackage.tool
 
-## cpackage tool usage
-
 ```bash
 python3 -m cpackage.tool -pkg simplepackage -sub code other --current
 ```
 
-## cpackage tool help
+# cpackage Tool Help
 ```
 python3 -m cpackage.tool --help
 usage: tool.py [-h] [-pkg PKG] [-sub SUB [SUB ...]] [-listdir LISTDIR] [-access ACCESS] [-remove REMOVE] [--site]
@@ -58,3 +56,17 @@ optional arguments:
   --site              Use python site packages directory
   --current           Use current working directory
 ```
+
+# cpackage Functions
+
+## CPack Description
+CPack takes one required argument pkg which is the package name. The second argument defaults to False but is recomended to be set True, True for current PWD or False for site-packages default. Third argument \*sub_package is the sub package names you want to set, can be one.
+
+## CAccess Description
+CAccess takes two required arguments pkg & \*fd. The second argument again defaults to False but is recomended set True. Pkg is the previously made package name or name & sub package name created with CPack. \*fd references the files to be created inside of the set package.
+
+## Cdir Description
+Cdir takes 1 required argument, pkg. The second argument again defaults to False but is recomended set True. Pkg is the previously made package name or name & sub package name created with CPack. Cdir returns a dictionary of the set package that it was given.
+
+## CRemove Description
+CRemove takes 1 required argument, pkg. The second argument again defaults to False but is recomended set True. Remove the set package tree that it is given.
