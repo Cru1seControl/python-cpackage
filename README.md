@@ -10,6 +10,12 @@ A python utility for creating better modules/packages. This module give the abil
 
 * Module shutil [preinstalled](https://docs.python.org/3/library/shutil.html)
 
+# Installing
+Execute *./install.sh* inside the python-cpackage folder.
+
+If your having trouble running the *./install.sh* script run *sed -i -e 's/\r$//' install.sh*
+
+
 # cpackage Module Usage
 
 ```python
