@@ -22,6 +22,17 @@ CAccess("mymodule/other", True, "examples.md", "python-tests.py")
 
 print(Cdir("mymodule", True))
 ```
+our package so far...
+
+    ├───mymodule
+        ├────README.md
+        ├───code
+            ├────__init__.py
+            ├────script.py
+        ├───other
+            ├────examples.md
+            ├────python-tests.py
+> NOT an actual depiction of the output
 
 or you can create a simple package in one line using cpackage.tool
 
