@@ -12,7 +12,7 @@ A python utility for creating better modules/packages. This module give the abil
 
 # Installing
 
-**Installing from Github**
+### **Installing from Github**
 
 git clone "https://github.com/Cru1seControl/python-cpackage.git"
 
@@ -20,7 +20,7 @@ Execute [*./install.sh*](https://github.com/Cru1seControl/python-cpackage/blob/m
 
 If your having trouble running the *./install.sh* script run *sed -i -e 's/\r$//' install.sh* then execute the script.
 
-**Installing from PyPI**
+### **Installing from PyPI**
 
 pip3 install cpackage
 
