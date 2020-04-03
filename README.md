@@ -11,7 +11,7 @@ CAccess("mymodule", True, "README.md")
 CAccess("mymodule/code", True, "__init__.py", "script.py")
 CAccess("mymodule/other", True, "examples.md", "python-tests.py")
 
-print(Cdir("mymodule"))
+print(Cdir("mymodule", True))
 ```
 
 or you can create a simple package in one line using cpackage.tool
