@@ -14,9 +14,6 @@ setup(
     url="https://github.com/Cru1seControl",
     download_url="https://github.com/Cru1seControl/python-cpackage",
     keywords=["packaging", "filesystem", "tool"],
-    install_requires=[
-    "os", "sys", "shutil"
-    ],
     classifiers=[
     "Development Status :: 5 - Production/Stable",
     "Intended Audience :: Developers",
