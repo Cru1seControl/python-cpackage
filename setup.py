@@ -1,6 +1,6 @@
 from distutils.core import setup
 
-with open("README.md" "r") as desc:
+with open("README.md", "r") as desc:
     long = desc.read()
 
 setup(
