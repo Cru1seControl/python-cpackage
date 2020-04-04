@@ -21,4 +21,10 @@ mv $DIR/LICENSE ~/.local/lib/python3.6/site-packages/cpackage-other
 echo -e "[+] Moving \e[92m$DIR/README.md\e[39m \e[92m$SITE_OTHER\e[39m"
 mv $DIR/README.md ~/.local/lib/python3.6/site-packages/cpackage-other
 
+echo -e "[+] Moving \e[92m$DIR/setup.py\e[39m \e[92m$SITE_OTHER\e[39m"
+mv $DIR/setup.py ~/.local/lib/python3.6/site-packages/cpackage-other
+
+echo -e "[+] Moving \e[92m$DIR/setup.cfg\e[39m \e[92m$SITE_OTHER\e[39m"
+mv $DIR/setup.cfg ~/.local/lib/python3.6/site-packages/cpackage-other
+
 echo -e "[!] \e[92mDONE\e[39m"
