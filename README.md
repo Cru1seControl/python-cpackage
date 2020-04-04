@@ -22,6 +22,8 @@ If your having trouble running the *./install.sh* script run *sed -i -e 's/\r$//
 
 ### **Installing from PyPI**
 
+[PyPI Package](https://pypi.org/project/cpackage/)
+
 pip3 install cpackage
 
 # cpackage Module Usage
