@@ -14,18 +14,15 @@ A python utility for creating better modules/packages. This module give the abil
 
 ### **Installing from Github**
 
-git clone "https://github.com/Cru1seControl/python-cpackage.git"
-
-Execute [*./install.sh*](https://github.com/Cru1seControl/python-cpackage/blob/master/install.sh) inside the python-cpackage folder.
-
-If your having trouble running the *./install.sh* script run *sed -i -e 's/\r$//' install.sh* then execute the script.
-
-### **Installing from PyPI**
-
-[PyPI Package](https://pypi.org/project/cpackage/)
-
-pip3 install cpackage
-
+```bash
+$ git clone "https://github.com/Cru1seControl/python-cpackage.git"
+$ cd python-cpackage/ && chmod +x install.sh && sed -i -e 's/\r$//' install.sh && ./install.sh
+$ sudo rm -r -I python-cpackage/
+```
+### **Installing from [PyPI](https://pypi.org/project/cpackage/)**
+```bash
+$ pip3 install cpackage
+```
 # cpackage Module Usage
 
 ```python
