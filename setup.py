@@ -1,15 +1,11 @@
 from distutils.core import setup
 
-with open("README.md", "r") as desc:
-    long = desc.read()
-
 setup(
     name="cpackage",
     packages=["cpackage"],
     version="v1.1.3",
     license="MIT",
     description="A python utility for creating better modules/packages.",
-    long_description=long,
     author="Cru1seControl",
     author_email="Cru1seControl.loot@gmail.com",
     url="https://github.com/Cru1seControl",
