@@ -17,7 +17,7 @@ A python utility for creating better modules/packages. This module give the abil
 ```bash
 $ git clone "https://github.com/Cru1seControl/python-cpackage.git"
 $ cd python-cpackage/ && chmod +x install.sh && sed -i -e 's/\r$//' install.sh && ./install.sh
-$ sudo rm -r -I python-cpackage/
+$ cd .. && sudo rm -r -I python-cpackage/
 ```
 ### **Installing from [PyPI](https://pypi.org/project/cpackage/)**
 ```bash
@@ -56,18 +56,22 @@ python3 -m cpackage.tool -pkg simplepackage -sub code other --current
 # cpackage Tool Help
 ```
 python3 -m cpackage.tool --help
-usage: tool.py [-h] [-pkg PKG] [-sub SUB [SUB ...]] [-listdir LISTDIR] [-access ACCESS] [-remove REMOVE] [--site]
-               [--current]
+usage: tool.py [-h] [-pkg PKG] [-sub SUB [SUB ...]] [-listdir LISTDIR]
+               [-access ACCESS] [-remove REMOVE] [-volume VOLUME]
+               [-volumes VOLUMES [VOLUMES ...]] [--site] [--current]
 
 optional arguments:
-  -h, --help          show this help message and exit
-  -pkg PKG            Package name to create
-  -sub SUB [SUB ...]  Sub package names to create
-  -listdir LISTDIR    List directory and sub packages
-  -access ACCESS      Create files within a package
-  -remove REMOVE      Remove entire package tree
-  --site              Use python site packages directory
-  --current           Use current working directory
+  -h, --help            show this help message and exit
+  -pkg PKG              Package name to create
+  -sub SUB [SUB ...]    Sub package names to create
+  -listdir LISTDIR      List directory and sub packages
+  -access ACCESS        Create files within a package
+  -remove REMOVE        Remove entire package tree
+  -volume VOLUME        View the current package volume size
+  -volumes VOLUMES [VOLUMES ...]
+                        Add two or more volume sizes together
+  --site                Use python site packages directory
+  --current             Use current working directory
 ```
 
 # cpackage Functions
@@ -83,3 +87,6 @@ Cdir takes 1 required argument, pkg. The second argument again defaults to False
 
 ## CRemove Description
 CRemove takes 1 required argument, pkg. The second argument again defaults to False but is recomended set True. Remove the set package tree that it is given.
+
+## CVolume Description
+CVolume take 1 required argument, pkg. CVolume checks the set volume size in bytes, megabytes, and gigabytes. CVolume can also be added to each other to get a full volume size or subtracted to compare two volumes or more.
