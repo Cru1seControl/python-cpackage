@@ -72,7 +72,7 @@ def Cdir(pkg, cur_dir=True):
 
     return {pkg: items}
 
-# Access sub directorys in the specfied package
+# Access sub directories in the specfied package
 def CAccess(pkg, cur_dir=True, *fd):
     if cur_dir:
         for sub_pkg in _construct._pkgSub(pkg, fd, True):
@@ -83,6 +83,46 @@ def CAccess(pkg, cur_dir=True, *fd):
         for sub_pkg in _construct._pkgSub(pkg, fd, False):
             _construct._exists(sub_pkg, False)
             os.mknod(sub_pkg)
+
+
+# Check the package or sub package volume
+def CVolume(pkg):
+    b = 0
+    KB = 1.0
+    MB = 1000.0
+    GB = 1000000000.0
+
+    for vol in os.listdir(pkg):
+
+        if os.path.isdir(pkg + "/" + vol):
+
+            for fname in os.listdir(pkg + "/" + vol):
+                try:
+                    with open(pkg + "/" + vol + "/" + fname, "rb") as rbfile_sub:
+                        read_bytes = len(bytes(rbfile_sub.read()))
+                        b += read_bytes
+                        read_bytes = read_bytes * 0.001
+                except IsADirectoryError:
+                    pass
+
+        else:
+            with open(pkg + "/" + vol, "rb") as rbfile:
+                read_bytes = len(bytes(rbfile.read()))
+                b += read_bytes
+                read_bytes = read_bytes * 0.001
+
+            #b += read_bytes
+            if read_bytes >= MB:
+                return (read_bytes, "MB")
+
+            elif read_bytes >= GB:
+                return (read_bytes, "GB")
+
+            elif read_bytes >= KB:
+                return (read_bytes, "KB")
+
+            else:
+                return (b, "B")
 
 # Remove the package tree 'good if you want everything gone'
 def CRemove(pkg, cur_dir=True):
