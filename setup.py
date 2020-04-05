@@ -6,7 +6,7 @@ with open("README.md", "r") as desc:
 setup(
     name="cpackage",
     packages=["cpackage"],
-    version="v1.0.3",
+    version="v1.1.3",
     license="MIT",
     description="A python utility for creating better modules/packages.",
     long_description=long,
