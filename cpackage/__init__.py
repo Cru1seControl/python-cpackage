@@ -12,7 +12,7 @@ Example:
 
 __all__     = ["CPack", "Cdir", "CAccess", "CRemove"]
 __author__  = "Cru1seControl <Cru1seControl.loot@gmail.com>"
-__version__ = "v1.0.0"
+__version__ = "v1.1.0"
 
 
 try: #Ignore errors, just dont run this file!
